@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="taco">
+        <h1>Tacos 3 Manitos</h1>
+    </div>
+
+
+    <main>
+        <h2>Los mejores tacos de la ciudad</h2>
+        <p>¿Que vas a querer hoy?</p>
+        <section>
+            <form action="#" method="post">
+                <fieldset class="datos">
+                    <legend>Tus datos o no sabremos donde mandarlo</legend>
+                    <div class="datos-persona">
+                        <label for="titulo">Titulo
+                            <select name="titulo" id="titulo">
+                                <option value="señor">Sr</option>
+                                <option value="señora">Sra</option>
+                                <option value="ilustrisima">Su Ilustrisima</option>
+                                <option value="honorable">Molt honorable</option>
+                            </select>
+                        </label>
+                        <label for="nombre">Nombre
+                            <input type="text" name="nombre" id="nombre" required>
+                        </label>
+                        <label for="Apellido">Apellido
+                            <input type="text" name="Apellido" id="Apellido" required>
+                        </label>
+                        <label for="telefono">Telefono
+                            <input type="tel" name="telefono" id="telefono" required>
+                        </label>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>¿Donde lo mandamos?</legend>
+                            <label for="recoger">
+                                <input type="radio" name="envio" id="recoger" value="recoger">Recoger
+                            </label>
+                            <label for="casa">
+                                <input type="radio" name="envio" id="casa" value="casa">A Casa -->
+                            </label>
+                            <label for="direccion">Direccion
+                                <input type="text" name="direccion" id="direccion">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <legend>¿Cuando lo quieres?</legend>
+                            <label for="fecha">Fecha:
+                                <input type="date" name="fecha" id="fecha">
+                            </label>
+                            <label for="hora">Hora:
+                                <input type="time" name="hora" id="hora">
+                            </label>
+                        </fieldset>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Crea tu pedido</legend>
+                    <label for="tipoComida">Elige tu opción
+                        <select name="tipoComida" id="tipoComida">
+                            <option value="">--Elige burritos, tacos o quesadillas--</option>
+                            <option value="burritos">Burritos</option>
+                            <option value="tacos">Tacos</option>
+                            <option value="quesadillas">Quesadillas</option>
+                        </select>
+                    </label>
+                    <label for="cantidad">Cantidad</label>
+                    <input type="number" name="numero" min="1" max="10" id="numero">
+                    <fieldset class="ingredientes">
+                        <legend>Ingredientes</legend>
+
+                        <label for="carne_asada">
+                            <input type="checkbox" name="carne_asada" id="carne_asada">Carne Asada
+                        </label>
+                        <label for="pollo">
+                            <input type="checkbox" name="pollo" id="pollo">Pollo
+                        </label>
+                        <label for="carnitas">
+                            <input type="checkbox" name="carnitas" id="carnitas">Carnitas
+                        </label>
+                        <label for="pastor">
+                            <input type="checkbox" name="pastor" id="pastor">Pastor
+                        </label>
+                        <label for="chorizo">
+                            <input type="checkbox" name="chorizo" id="chorizo">Chorizo
+                        </label>
+                        <label for="cebolla">
+                            <input type="checkbox" name="cebolla" id="cebolla">Cebolla
+                        </label>
+                        <label for="cilantro">
+                            <input type="checkbox" name="cilantro" id="cilantro">Cilantro
+                        </label>
+                        <label for="guacamole">
+                            <input type="checkbox" name="guacamole" id="guacamole">Guacamole
+                        </label>
+                        <label for="salsa">
+                            <input type="checkbox" name="salsa" id="salsa">Salsa
+                        </label>
+                        <label for="queso">
+                            <input type="checkbox" name="queso" id="queso">Queso
+                        </label>
+                        <label for="frijoles">
+                            <input type="checkbox" name="frijoles" id="frijoles">Frijoles
+                        </label>
+                        <label for="lechuga">
+                            <input type="checkbox" name="lechuga" id="lechuga">Lechuga
+                        </label>
+                        <label for="pico_de_gallo">
+                            <input type="checkbox" name="pico_de_gallo" id="pico_de_gallo">Pico de Gallo
+                        </label>
+                        <label for="nopales">
+                            <input type="checkbox" name="nopales" id="nopales">Nopales
+                        </label>
+                        <label for="jalapeños">
+                            <input type="checkbox" name="jalapeños" id="jalapeños">Jalapeños
+                        </label>
+
+                    </fieldset>
+                    <button type="button" class="añadir-pedido">Añadir al pedido</button>
+                </fieldset>
+
+                <section class="comentarios">
+                    <fieldset>
+                        <legend>Tienes Alguna Alergia, ¿Cuentanoslo Aqui?</legend>
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea name="comentarios" id="comentarios" rows="8" title="Escribe tus comentarios aquí"
+                            placeholder="Escribe tus comentarios aquí"></textarea>
+                    </fieldset>
+                </section>
+                <button type="submit">Enviar pedido</button>
+            </form>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

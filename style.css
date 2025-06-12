@@ -1,0 +1,99 @@
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #10b070;
+    background:
+        url("./media/mejico.jpeg")no-repeat center/25%,
+        linear-gradient(90deg,
+            green 0%,
+            white 35%,
+            white 60%,
+            red 100%);
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.taco {
+    width: 300px;
+    height: 150px;
+    background: #d66a11;
+    background: linear-gradient(339deg,
+            rgba(214, 106, 17, 1) 0%,
+            rgba(253, 187, 45, 1) 100%);
+    border-top-left-radius: 800px;
+    border-top-right-radius: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    box-shadow: 25px 14px 37px -11px #c48019bf;
+
+}
+select{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+}
+.datos {
+    display: flex;
+    flex-direction: column;
+}
+.datos-persona{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cuando-donde {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+fieldset {
+    border-color: rgb(210, 210, 210);
+    background-color: #f2fff941;
+    border-radius: 15px;
+    box-shadow: 5px 4px 10px grey;
+    backdrop-filter: blur(8px);
+    margin: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.ingredientes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    
+
+}
+
+button {
+    border-color: rgb(210, 210, 210);
+    background-color: #f2fff941;
+    border-radius: 15px;
+    box-shadow: 5px 4px 10px grey;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    cursor: pointer;
+    
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton:hover {
+    background: linear-gradient(90deg, #d66a11 0%, #10b070 100%);
+    transform: translateY(-2px) scale(1.04);
+}
+
+textarea {
+    min-width: 100%;
+    border-radius: 15px;
+    box-shadow: inset 2px 2px 10px grey;
+
+}
