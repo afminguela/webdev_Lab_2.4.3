@@ -86,7 +86,12 @@ button {
 }
 
 button:hover {
-    background: linear-gradient(90deg, #d66a11 0%, #10b070 100%);
+    background: 
+     url("./media/mejico.jpeg")no-repeat center/25%,
+    linear-gradient(90deg, green 0%,
+            white 35%,
+            white 60%,
+            red 100%); 
     transform: translateY(-2px) scale(1.04);
 }
 
