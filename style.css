@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 135vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -82,11 +82,10 @@ button {
     font-size: 1.1rem;
     font-family: inherit;
     cursor: pointer;
-    
     transition: background-color 0.2s, transform 0.2s;
 }
 
-.boton:hover {
+button:hover {
     background: linear-gradient(90deg, #d66a11 0%, #10b070 100%);
     transform: translateY(-2px) scale(1.04);
 }
